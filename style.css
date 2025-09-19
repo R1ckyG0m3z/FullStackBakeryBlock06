@@ -1,0 +1,85 @@
+/*used flex box settings below with margin-top in footer to correct footer position*/
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/*Flex box for Header and Nav bar below*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 3vh;
+  /*used flex-wrap to correct nav bar when adjusting to small viewport*/
+  flex-wrap: wrap;
+}
+.brand {
+  text-transform: uppercase;
+  color: rgb(70, 36, 226);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 7vh;
+}
+/*nav bar item customized below*/
+a {
+  padding: 1vh;
+  color: black;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 5px solid rgb(91, 81, 235);
+  border-radius: 3vh;
+}
+main {
+  display: flex;
+  /*gap used below to correct alignment*/
+  gap: 4vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*sidbar list flex box below*/
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  border-radius: 1vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  list-style-type: none;
+  font-size: 4vh;
+}
+/*side bar list item customized below*/
+li {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(223, 21, 172);
+  border-radius: 1vh;
+  width: 20vh;
+}
+article > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.testimonial {
+  /*testimonial box background set to gray*/
+  background-color: rgb(241, 235, 235);
+  align-items: start;
+  font-style: italic;
+  margin-left: auto;
+  font-weight: bold;
+}
+/*footer flex box below*/
+footer {
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  text-align: center;
+  height: 5vh;
+  color: white;
+  background-color: rgb(17, 20, 243);
+  font-weight: bold;
+  font-size: 4vh;
+}
